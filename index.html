@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maxenius</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Maxenius Logo" />
+     
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#ceo">CEO Message</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Maxenius</h2>
+    <p>Innovative IT Solutions for Your Business</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <section id="about" class="section card">
+    <h2>About Us</h2>
+    <p>Maxenius is a leading IT company offering cutting-edge solutions in software development, digital marketing, and business automation. Our mission is to empower businesses with technology that drives growth and efficiency.</p>
+  </section>
+
+  <section id="ceo" class="section card">
+    <h2>Message from the CEO</h2>
+    <div class="ceo-box">
+      <img src="ceo.jpg" alt="Syed Muhammad Usama" />
+      <div>
+        <h3>Syed Muhammad Usama</h3>
+        <p><strong>Founder & CEO</strong></p>
+        <p>"At Maxenius, we believe in transforming ideas into impactful digital experiences. Our philosophy is rooted in innovation, integrity, and excellence. We strive to empower businesses with technology that not only solves problems but creates opportunities."</p>
+      </div>
+    </div>
+  </section>
+  <section id="why" class="section card">
+    <h2>Why Choose Us</h2>
+    <ul class="why-list">
+      <li><strong>🚀 Innovation-Driven:</strong> We embrace the latest technologies to deliver forward-thinking solutions.</li>
+      <li><strong>🎯 Client-Centered:</strong> Your goals are our priority. We tailor every project to your unique needs.</li>
+      <li><strong>💼 Proven Expertise:</strong> Our team brings years of experience across industries and platforms.</li>
+      <li><strong>📈 Results-Focused:</strong> We don’t just build — we help you grow, scale, and succeed.</li>
+      <li><strong>🤝 Long-Term Partnership:</strong> We’re here for the journey, not just the launch.</li>
+    </ul>
+  </section>
+  <section id="services" class="section card">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Custom websites and web apps tailored to your business needs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mobile App Development</h3>
+        <p>iOS and Android apps that deliver seamless user experiences.</p>
+      </div>
+      <div class="service-card">
+        <h3>Digital Marketing</h3>
+        <p>SEO, social media, and campaigns that drive real results.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business Automation</h3>
+        <p>Streamline operations with smart automation solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section card">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Email:</strong> info@maxenius.com</p>
+      <p><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+      <p><strong>Address:</strong> Faisalabad, Pakistan</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maxenius. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
